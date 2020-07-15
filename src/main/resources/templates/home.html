@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CallBack Runner </title>
+    <script th:src="@{angular.js}"></script>
+    <script th:src="@{/main.js}"></script>
+    <link   th:href="@{/main.css}" rel="stylesheet" />
+</head>
+<body ng-app="CBRunnerApp" ng-controller="TestController">
+
+    <h2>
+        CBRunner Application home page
+    </h2>
+
+    <table border="1">
+        <tr>
+
+            <td >
+                <input type="button" value="Получить 1 Ticket" ng-click="testGetOneTicket()"/>
+            </td>
+            <td>
+                <input  type=text size="5" name="ticketId" ng-model="ticketId"/>
+            </td>
+            <td>
+                <textarea  rows="5" cols="100" name="result1" ng-model="result"/>
+            </td>
+
+        </tr>
+    </table>
+
+    <!--<input type="button" value="Получить Ticket" ng-click="testGetOneTicket()"/>
+    <textarea  size="50" ng-model = "result"/>-->
+
+
+</body>
+</html>
